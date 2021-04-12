@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "578485874447",
+    "firebase_url": "https://lyrixapplication.firebaseio.com",
+    "project_id": "lyrixapplication",
+    "storage_bucket": "lyrixapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578485874447:android:41845b733afdbdd5fe587a",
+        "android_client_info": {
+          "package_name": "com.gabriel.lyrixapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578485874447-fr34d6579f5akm7guuevm84t3ceqq5hl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuEEwU8X1nSAhQd9khV4z5ctsMqhhz1eg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578485874447-fr34d6579f5akm7guuevm84t3ceqq5hl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/saveSongMenu"
+        android:title="@string/save_this_song"
+        app:showAsAction="always"
+        android:icon="@drawable/save_icon"
+        />
+
+    <item
+        android:id="@+id/returnMenu"
+        android:title="@string/return_to_home"
+        app:showAsAction="always"
+        android:icon="@drawable/return_icon"
+        />
+
+
+
+</menu>

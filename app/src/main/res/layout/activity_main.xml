@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".controller.HomeController"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/myToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_background"
+                android:theme="@style/AppTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:title="Search"
+                app:titleTextColor="#FFF"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+<ImageView
+    android:id="@+id/album"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:layout_below="@id/barLayout"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"/>
+
+<RelativeLayout
+    android:id="@+id/form"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/album"
+    android:layout_centerHorizontal="true"
+    android:background="#303030"
+    android:layout_margin="20dp"
+    android:elevation="30dp"
+    >
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textColor="#FFF"
+        android:fontFamily="@font/roboto_light"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameLabel"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColorHint="#FFF"
+        android:textColor="#BB86FC"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:id="@+id/artistLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameText"
+        android:textColor="#FFF"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/artist"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/artistText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/artistLabel"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColorHint="#FFF"
+        android:textColor="#BB86FC"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/artistText"
+        android:layout_centerHorizontal="true"
+        android:text="@string/search" />
+
+
+
+    <TextView
+        android:id="@+id/errorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchButton"
+        android:textColor="#FFF"/>
+
+</RelativeLayout>
+
+
+
+
+</RelativeLayout>

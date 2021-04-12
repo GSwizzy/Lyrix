@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.SavedSongsController"
+    android:background="#121212">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/myToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_background"
+                android:theme="@style/AppTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:title="Saved"
+                app:titleTextColor="#FFF"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/recyclerHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/barLayout"
+        android:background="#303030"
+        android:layout_margin="10dp"
+        android:elevation="10dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/savedSongRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="10dp"
+    />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/lyricsHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerHolder"
+        android:background="#303030"
+        android:layout_margin="10dp"
+        android:elevation="10dp">
+
+    <TextView
+        android:id="@+id/lyricsView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="10dp"
+        android:scrollbars="vertical"
+        android:textColor="#BB86FC"
+        android:fontFamily="@font/roboto_light"
+
+        />
+
+
+        <LinearLayout
+            android:id="@+id/deleteLayout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="255dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="26dp"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/deleteTV"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="9dp"
+                android:text="Delete"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:contentDescription="@string/delete_button"
+                android:src="@drawable/delete_logo"
+                android:id="@+id/deleteButtonFloat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:background="@drawable/gradient_background"
+                app:fabSize="mini"
+                />
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:contentDescription="@string/check"
+            android:src="@drawable/setting_icon"
+            android:id="@+id/doneButtonFloat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:backgroundTint="#BB86FC"
+            app:fabSize="normal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="6dp"
+    android:layout_margin="6dp"
+    android:padding="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_layout"
+    app:cardBackgroundColor="#BB86FC">
+
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_textView"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="15sp"
+            android:textColor="#FFF"
+            android:fontFamily="@font/roboto_light"
+            android:text="Name - Artist"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
